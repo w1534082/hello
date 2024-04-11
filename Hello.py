@@ -26,7 +26,7 @@ elif classification_space == "Spanish":
 elif classification_space == "German":
     option = 'de'
 elif classification_space == "French":
-    option = 'zh'
+    option = 'fr'
 
 
 #TASK 2
