@@ -14,13 +14,20 @@ text = st.text_input("Enter input:", "")
 
 #methods
 #TASK 1
-cs = ["Chinese"]#add options for spanish, german and french. You need to edit the cs list.
+cs = ["Chinese", "Spanish", "German", "French"]#add options for spanish, german and french. You need to edit the cs list.
 #after you add options the sidebar would show 4 languages
 classification_space = st.sidebar.selectbox("Language to be translated into:", cs)
 option = ''
 
 if classification_space == "Chinese":
     option = 'zh'
+elif classification_space == "Spanish":
+    option = 'es'
+elif classification_space == "German":
+    option = 'de'
+elif classification_space == "French":
+    option = 'zh'
+
 
 #TASK 2
 #for language codes have a look at https://cloud.google.com/translate/docs/languages
